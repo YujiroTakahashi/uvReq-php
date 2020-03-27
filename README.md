@@ -1,6 +1,6 @@
 # uvReq-php
 
-uvReq-php is a PHP bindings for libuv and cURL.
+uvReq-php is multi-thread connections by cURL.
 
 ## Requirements
 
