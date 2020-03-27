@@ -47,7 +47,7 @@ public:
     void setSleepTime(long sleepTime);
     long getSleepTime();
     void setWorker();
-    void wait();
+    void await();
     void queueWork(std::string url, int tryNumber);
     std::vector<Node> getReply();
     std::vector<std::string> getErrors();
@@ -128,7 +128,7 @@ inline void uvRequest::setWorker()
  * @access public
  * @return void
  */
-inline void uvRequest::wait()
+inline void uvRequest::await()
 {
     uv_run(_loop, UV_RUN_DEFAULT);
 }
