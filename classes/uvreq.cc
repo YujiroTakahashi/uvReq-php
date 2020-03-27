@@ -82,7 +82,7 @@ PHP_METHOD(uvrequest, execute)
         zend_hash_move_forward(ht);
     }
 
-    uvreq->wait();
+    uvreq->await();
 
 
     std::vector<croco::uvRequest::Node> nodes = uvreq->getReply();
